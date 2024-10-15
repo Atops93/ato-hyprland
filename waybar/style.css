@@ -42,7 +42,7 @@ window#waybar.PCSX2 #window {
 	margin-bottom: 0;
 	border-radius: 10px;
 	border: 2px solid white;
-	background: #282a36;
+	background: #2c3640;
 	transition: width 1s;
 }
 
@@ -74,7 +74,7 @@ window#waybar.PCSX2 #window {
     border-radius: 10px;
     transition: none;
     color: #FFFFFF;
-    background: #282a36;
+    background: #2c3640;
 }
 
 #temperature {
@@ -87,7 +87,7 @@ window#waybar.PCSX2 #window {
 	border-radius: 10px;
 	transition: none;
 	color: #FFFFFF;
-	background: #282a36;
+	background: #2c3640;
 }
 
 #cpu {
@@ -100,7 +100,7 @@ window#waybar.PCSX2 #window {
 	border: 2px solid rgb(255, 255, 255);
 	transition: none;
 	color: #FFFFFF;
-	background: #282a36;
+	background: #2c3640;
 }
 
 #memory {
@@ -113,8 +113,8 @@ window#waybar.PCSX2 #window {
 	border: 2px solid white;
 	border-radius: 10px;
 	transition: none;
-	color: #FFFFFF;
-	background: #282a36;
+	color: #f8fbfd;
+	background: #2c3640;
 }
 
 #clock {
@@ -127,8 +127,8 @@ window#waybar.PCSX2 #window {
 	border-radius: 10px;
 	transition: none;
 	border: 2px solid white;
-	color: #FFFFFF;
-	background: #282a36;
+	color: #f8fbfd;
+	background: #2c3640;
 }
 
 #custom-logout {
@@ -142,5 +142,5 @@ window#waybar.PCSX2 #window {
 	border: 2px solid white;
 	transition: width 1s;
 	color: #ffffff;
-	background: #282a36;
+	background: #2c3640;
 }

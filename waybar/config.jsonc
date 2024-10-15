@@ -53,17 +53,17 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%d-%m-%Y}"
     },
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false,
-        "on-click": "kitty htop",
+        "on-click": "alacritty htop",
     },
 
     "memory": {
         "format": "{}% ",
-        "on-click": "kitty htop",
+        "on-click": "alacritty htop",
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -93,8 +93,8 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
-    "battery#bat2": {
-        "bat": "BAT2"
+    "battery#bat0": {
+        "bat": "BAT0"
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -105,11 +105,9 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
-    "pulseaudio": {
+    "pipewire": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
