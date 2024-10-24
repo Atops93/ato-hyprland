@@ -75,19 +75,8 @@ window#waybar.PCSX2 #window {
     transition: none;
     color: #FFFFFF;
     background: #2c3640;
-}
-
-#temperature {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	border: 2px solid white;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 10px;
-	transition: none;
-	color: #FFFFFF;
-	background: #2c3640;
+    min-width: 70px;
+    margin-left: 5px;
 }
 
 #cpu {
@@ -131,16 +120,39 @@ window#waybar.PCSX2 #window {
 	background: #2c3640;
 }
 
-#custom-logout {
-	margin-top: 8px;
-	margin-left: 12px;
-	margin-bottom: 0;
-	padding-left: 13px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 10px;
-	border: 2px solid white;
-	transition: width 1s;
-	color: #ffffff;
-	background: #2c3640;
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 1;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+    min-width: 80px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: #2c3640;
+    border: 2px solid white;
+}
+
+#pulseaudio-slider highlight {
+    border-radius: 10px;
+    border-color: white;
+    background-color: #9aedfe;
+}
+
+#battery {
+    margin-top: 8px;
+    margin-left: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: none;
+    color: #FFFFFF;
+    background: #2c3640;
 }

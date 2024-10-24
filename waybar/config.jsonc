@@ -7,16 +7,12 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "custom/logout",
         "hyprland/workspaces",
     ],
     "modules-center": [
         "clock"
     ],
-    "modules-right": [
-        "cpu",
-        "memory",
-    ],
+    "modules-right": ["pulseaudio", "pulseaudio/slider", "battery", "cpu", "memory"],
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -58,55 +54,33 @@
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false,
-        "on-click": "alacritty htop",
+        "on-click": "alacritty btop",
     },
 
     "memory": {
         "format": "{}% ",
-        "on-click": "alacritty htop",
+        "on-click": "alacritty btop",
     },
-    "temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
-    },
+
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+    "pulseaudio": {
+	    "format": "{icon}    {volume}%",
+	    "format-muted": "",
+	    "format-icons": {
+        "default": ["", "", ""],
     },
-    "battery#bat0": {
-        "bat": "BAT0"
-    },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
+	    "scroll-step": 1,
+},
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal",
+},
     "pipewire": {
-        // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
@@ -122,9 +96,14 @@
         },
         "on-click": "pavucontrol"
     },
-    "custom/logout": {
-        "format": "󰣇",
-        "interval": "once",
-        "on-click": "wlogout -c 5 -r 5 -p layer-shell",
+
+"battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": {
+        "charging": "", 
+        "discharging": ["", "", "", "", ""],
+        "default": "" // Default icon when no specific status is found
+    },
+    "tooltip": false
 }
 },
