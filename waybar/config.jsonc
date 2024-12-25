@@ -10,8 +10,8 @@
         "hyprland/workspaces",
     ],
     "modules-center": [
-        "clock"
-    ],
+    "clock"
+],
     "modules-right": ["pulseaudio", "pulseaudio/slider", "battery", "cpu", "memory"],
     "keyboard-state": {
         "numlock": true,
@@ -47,8 +47,9 @@
         "spacing": 10
     },
     "clock": {
-        // "timezone": "America/New_York",
+        // "timezone": "Australia/Adelaide",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+	"format": "{:%I:%M %p}",
         "format-alt": "{:%d-%m-%Y}"
     },
     "cpu": {
