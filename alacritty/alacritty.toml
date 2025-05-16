@@ -1,0 +1,34 @@
+[window]
+opacity = 0.0
+padding.x = 10
+padding.y = 10
+
+decorations = "Full"
+#decorations = "None"
+decorations_theme_variant = "Dark"
+
+[font]
+
+normal.family = "JetBrainsMono Nerd Font"
+#ormal.family = "ComicMono"
+
+size = 12.0
+
+[cursor]
+
+blink_interval = 600
+unfocused_hollow = false
+
+[colors.primary]
+background = '#2c3640'
+foreground = '#bbc2cf'
+
+[colors.normal]
+black   = '#282c34'
+red     = '#ff6c6b'
+green   = '#3a6f30'
+yellow  = '#ecbe7b'
+blue    = '#51afef'
+magenta = '#c678dd'
+cyan    = '#46d9ff'
+white   = '#bbc2cf'
