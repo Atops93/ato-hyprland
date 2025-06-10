@@ -12,7 +12,7 @@
     "modules-center": [
     "clock"
 ],
-    "modules-right": ["pulseaudio", "pulseaudio/slider", "battery", "cpu", "memory"],
+    "modules-right": ["pulseaudio", "pulseaudio/slider", "battery"],
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -51,16 +51,6 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 	"format": "{:%I:%M %p}",
         "format-alt": "{:%d-%m-%Y}"
-    },
-    "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false,
-        "on-click": "alacritty btop",
-    },
-
-    "memory": {
-        "format": "{}% ",
-        "on-click": "alacritty btop",
     },
 
     "backlight": {
